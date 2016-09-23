@@ -139,8 +139,9 @@
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\fonts\socialglyphs-webfont.svg" />
+    <Content Include="Assets\img\aabb\bg-happy-people-opt.jpg" />
     <Content Include="Assets\img\aabb\bg_happy_people.jpg" />
-    <Content Include="Assets\img\aabb\futebol-bola-642x336.jpg" />
+    <Content Include="Assets\img\aabb\futebol-bola.jpg" />
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
     <Content Include="Assets\img\aabb\salao-de-festas.jpg" />
     <Content Include="Assets\img\back.jpg" />
