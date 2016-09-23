@@ -48,3 +48,7 @@
 .wrap-hero {
     background-image: url(/Assets/img/aabb/bg_happy_people.jpg)
 }
+
+.wrap-hero .carousel-hero .carousel-caption .action-zone {
+    text-align: left;
+}
