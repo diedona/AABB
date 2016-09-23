@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AABB Piracicaba - @ViewBag.Title</title>
+
+    <link rel="shortcut icon" href="/Assets/img/favicon.png" />
+
+    <meta name="description" content="">
+
+    <!-- CSS -->
+    <link href="/Assets/css/preload.css" rel="stylesheet">
+
+    <!-- Compiled in vendors.js -->
+    <!--
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-switch.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/slidebars.min.css" rel="stylesheet">
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+    <link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="assets/css/buttons.css" rel="stylesheet">
+    -->
+
+    <link href="/Assets/css/vendors.css" rel="stylesheet">
+
+    <!-- RS5.0 Stylesheet -->
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">-->
+
+    <link href="/Assets/css/style-blue.css" rel="stylesheet" title="default">
+    <link href="/Assets/css/width-full.css" rel="stylesheet" title="default">
+    <link href="~/Assets/css/custom.css" rel="stylesheet" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="/Assets/js/html5shiv.min.js"></script>
+        <script src="/Assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<body>
+
+    <div class="sb-site-container">
+        <div class="boxed">
+
+            <header id="header-full-top" class="hidden-xs header-full-dark">
+                <div class="container">
+                    <div class="header-full-title">
+                        <h1 class="animated fadeInRight"><a href="@Url.Action("Index", "Home")">AABB <span>Piracicaba</span></a></h1>
+                        <p class="animated fadeInRight">Seja bem vindo!</p>
+                    </div>
+                    <nav class="top-nav">
+                        <ul class="top-nav-social hidden-sm">
+                            <li><a href="#" class="animated fadeIn animation-delay-1 facebook"><i class="fa fa-facebook"></i></a></li>
+                        </ul>
+
+                        @*<div class="dropdown animated fadeInDown animation-delay-11">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Login</a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated flipCenter">
+                                <form role="form">
+                                    <h4>Login Form</h4>
+
+                                    <div class="form-group">
+                                        <div class="input-group login-input">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <br>
+                                        <div class="input-group login-input">
+                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="checkbox pull-left">
+                                            <input type="checkbox" id="checkbox_remember1">
+                                            <label for="checkbox_remember1">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-ar btn-primary pull-right">Login</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>*@
+                    </nav>
+                </div> <!-- container -->
+            </header> <!-- header-full -->
+            @Html.Partial("_NavBar")
+
+            @RenderBody()
+
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/Assets/js/vendors.js"></script>
+
+    <script src="/Assets/js/app.js"></script>
+
+</body>
+
+</html>

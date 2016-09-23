@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1888FD96-165C-4F4A-B380-39C58E46FCCB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AABB.WebSite</RootNamespace>
+    <AssemblyName>AABB.WebSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\custom.css" />
+    <Content Include="Assets\css\preload.css" />
+    <Content Include="Assets\css\style-aqua.css" />
+    <Content Include="Assets\css\style-blue.css" />
+    <Content Include="Assets\css\style-blue2.css" />
+    <Content Include="Assets\css\style-blue3.css" />
+    <Content Include="Assets\css\style-blue4.css" />
+    <Content Include="Assets\css\style-blue5.css" />
+    <Content Include="Assets\css\style-fuchsia.css" />
+    <Content Include="Assets\css\style-gray.css" />
+    <Content Include="Assets\css\style-green.css" />
+    <Content Include="Assets\css\style-green2.css" />
+    <Content Include="Assets\css\style-green3.css" />
+    <Content Include="Assets\css\style-green4.css" />
+    <Content Include="Assets\css\style-green5.css" />
+    <Content Include="Assets\css\style-orange.css" />
+    <Content Include="Assets\css\style-orange2.css" />
+    <Content Include="Assets\css\style-orange3.css" />
+    <Content Include="Assets\css\style-pink.css" />
+    <Content Include="Assets\css\style-red.css" />
+    <Content Include="Assets\css\style-red2.css" />
+    <Content Include="Assets\css\style-red3.css" />
+    <Content Include="Assets\css\style-violet.css" />
+    <Content Include="Assets\css\style-violet2.css" />
+    <Content Include="Assets\css\style-violet3.css" />
+    <Content Include="Assets\css\style-yellow.css" />
+    <Content Include="Assets\css\style-yellow2.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCore.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreDefault.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreDjango.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreEclipse.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreEmacs.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreFadeToGrey.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreMDUltra.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreMidnight.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreRDark.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeDefault.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeDjango.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeEclipse.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeEmacs.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeFadeToGrey.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeMDUltra.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeMidnight.css" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeRDark.css" />
+    <Content Include="Assets\css\vendors.css" />
+    <Content Include="Assets\css\width-boxed.css" />
+    <Content Include="Assets\css\width-full.css" />
+    <Content Include="Assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\fonts\socialglyphs-webfont.svg" />
+    <Content Include="Assets\img\aabb\bg_happy_people.jpg" />
+    <Content Include="Assets\img\aabb\futebol-bola-642x336.jpg" />
+    <Content Include="Assets\img\back.jpg" />
+    <Content Include="Assets\img\back.png" />
+    <Content Include="Assets\img\back_lead.jpg" />
+    <Content Include="Assets\img\back_lead2.jpg" />
+    <Content Include="Assets\img\back_lead3.jpg" />
+    <Content Include="Assets\img\back_lead4.jpg" />
+    <Content Include="Assets\img\back_lead5.jpg" />
+    <Content Include="Assets\img\back_lead6.jpg" />
+    <Content Include="Assets\img\back_lead7.jpg" />
+    <Content Include="Assets\img\back_lead8.jpg" />
+    <Content Include="Assets\img\back_lead9.jpg" />
+    <Content Include="Assets\img\back_menubar.png" />
+    <Content Include="Assets\img\back_polygons.jpg" />
+    <Content Include="Assets\img\back_profile.jpg" />
+    <Content Include="Assets\img\back_services.jpg" />
+    <Content Include="Assets\img\back_wrap_commerce.jpg" />
+    <Content Include="Assets\img\bg_muelle.jpg" />
+    <Content Include="Assets\img\bg_ny.jpg" />
+    <Content Include="Assets\img\bg_ny2.jpg" />
+    <Content Include="Assets\img\bx_loader.gif" />
+    <Content Include="Assets\img\coloredbg.png" />
+    <Content Include="Assets\img\colors\aqua\logo.png" />
+    <Content Include="Assets\img\colors\aqua\logo50.png" />
+    <Content Include="Assets\img\colors\aqua\logo_big.png" />
+    <Content Include="Assets\img\colors\blue2\logo.png" />
+    <Content Include="Assets\img\colors\blue2\logo50.png" />
+    <Content Include="Assets\img\colors\blue2\logo_big.png" />
+    <Content Include="Assets\img\colors\blue3\logo.png" />
+    <Content Include="Assets\img\colors\blue3\logo50.png" />
+    <Content Include="Assets\img\colors\blue3\logo_big.png" />
+    <Content Include="Assets\img\colors\blue4\logo.png" />
+    <Content Include="Assets\img\colors\blue4\logo50.png" />
+    <Content Include="Assets\img\colors\blue4\logo_big.png" />
+    <Content Include="Assets\img\colors\blue5\logo.png" />
+    <Content Include="Assets\img\colors\blue5\logo50.png" />
+    <Content Include="Assets\img\colors\blue5\logo_big.png" />
+    <Content Include="Assets\img\colors\blue\logo.png" />
+    <Content Include="Assets\img\colors\blue\logo50.png" />
+    <Content Include="Assets\img\colors\blue\logo_big.png" />
+    <Content Include="Assets\img\colors\fuchsia\logo.png" />
+    <Content Include="Assets\img\colors\fuchsia\logo50.png" />
+    <Content Include="Assets\img\colors\fuchsia\logo_big.png" />
+    <Content Include="Assets\img\colors\gray\logo.png" />
+    <Content Include="Assets\img\colors\gray\logo50.png" />
+    <Content Include="Assets\img\colors\gray\logo_big.png" />
+    <Content Include="Assets\img\colors\green2\logo.png" />
+    <Content Include="Assets\img\colors\green2\logo50.png" />
+    <Content Include="Assets\img\colors\green2\logo_big.png" />
+    <Content Include="Assets\img\colors\green3\logo.png" />
+    <Content Include="Assets\img\colors\green3\logo50.png" />
+    <Content Include="Assets\img\colors\green3\logo_big.png" />
+    <Content Include="Assets\img\colors\green4\logo.png" />
+    <Content Include="Assets\img\colors\green4\logo50.png" />
+    <Content Include="Assets\img\colors\green4\logo_big.png" />
+    <Content Include="Assets\img\colors\green5\logo.png" />
+    <Content Include="Assets\img\colors\green5\logo50.png" />
+    <Content Include="Assets\img\colors\green5\logo_big.png" />
+    <Content Include="Assets\img\colors\green\logo.png" />
+    <Content Include="Assets\img\colors\green\logo50.png" />
+    <Content Include="Assets\img\colors\green\logo_big.png" />
+    <Content Include="Assets\img\colors\orange2\logo.png" />
+    <Content Include="Assets\img\colors\orange2\logo50.png" />
+    <Content Include="Assets\img\colors\orange2\logo_big.png" />
+    <Content Include="Assets\img\colors\orange3\logo.png" />
+    <Content Include="Assets\img\colors\orange3\logo50.png" />
+    <Content Include="Assets\img\colors\orange3\logo_big.png" />
+    <Content Include="Assets\img\colors\orange\logo.png" />
+    <Content Include="Assets\img\colors\orange\logo50.png" />
+    <Content Include="Assets\img\colors\orange\logo_big.png" />
+    <Content Include="Assets\img\colors\pink\logo.png" />
+    <Content Include="Assets\img\colors\pink\logo50.png" />
+    <Content Include="Assets\img\colors\pink\logo_big.png" />
+    <Content Include="Assets\img\colors\red2\logo.png" />
+    <Content Include="Assets\img\colors\red2\logo50.png" />
+    <Content Include="Assets\img\colors\red2\logo_big.png" />
+    <Content Include="Assets\img\colors\red3\logo.png" />
+    <Content Include="Assets\img\colors\red3\logo50.png" />
+    <Content Include="Assets\img\colors\red3\logo_big.png" />
+    <Content Include="Assets\img\colors\red\logo.png" />
+    <Content Include="Assets\img\colors\red\logo50.png" />
+    <Content Include="Assets\img\colors\red\logo_big.png" />
+    <Content Include="Assets\img\colors\violer3\logo_big.png" />
+    <Content Include="Assets\img\colors\violet2\logo.png" />
+    <Content Include="Assets\img\colors\violet2\logo50.png" />
+    <Content Include="Assets\img\colors\violet2\logo_big.png" />
+    <Content Include="Assets\img\colors\violet3\logo.png" />
+    <Content Include="Assets\img\colors\violet3\logo50.png" />
+    <Content Include="Assets\img\colors\violet3\logo_big.png" />
+    <Content Include="Assets\img\colors\violet\logo.png" />
+    <Content Include="Assets\img\colors\violet\logo50.png" />
+    <Content Include="Assets\img\colors\violet\logo_big.png" />
+    <Content Include="Assets\img\colors\yellow2\logo.png" />
+    <Content Include="Assets\img\colors\yellow2\logo50.png" />
+    <Content Include="Assets\img\colors\yellow2\logo_big.png" />
+    <Content Include="Assets\img\colors\yellow\logo.png" />
+    <Content Include="Assets\img\colors\yellow\logo50.png" />
+    <Content Include="Assets\img\colors\yellow\logo_big.png" />
+    <Content Include="Assets\img\coming_back.jpg" />
+    <Content Include="Assets\img\controls.png" />
+    <Content Include="Assets\img\demo\1.jpg" />
+    <Content Include="Assets\img\demo\2.jpg" />
+    <Content Include="Assets\img\demo\3.jpg" />
+    <Content Include="Assets\img\demo\4.jpg" />
+    <Content Include="Assets\img\demo\5.jpg" />
+    <Content Include="Assets\img\demo\7.jpg" />
+    <Content Include="Assets\img\demo\anz.png" />
+    <Content Include="Assets\img\demo\avatar100.jpg" />
+    <Content Include="Assets\img\demo\avatar230.jpg" />
+    <Content Include="Assets\img\demo\avatar370.jpg" />
+    <Content Include="Assets\img\demo\card1.jpg" />
+    <Content Include="Assets\img\demo\card2.jpg" />
+    <Content Include="Assets\img\demo\card3.jpg" />
+    <Content Include="Assets\img\demo\card4.jpg" />
+    <Content Include="Assets\img\demo\client.jpg" />
+    <Content Include="Assets\img\demo\client2.jpg" />
+    <Content Include="Assets\img\demo\client4.jpg" />
+    <Content Include="Assets\img\demo\client5.jpg" />
+    <Content Include="Assets\img\demo\client6.jpg" />
+    <Content Include="Assets\img\demo\e-mac.png" />
+    <Content Include="Assets\img\demo\e_img01.jpg" />
+    <Content Include="Assets\img\demo\e_img02.jpg" />
+    <Content Include="Assets\img\demo\e_img03.jpg" />
+    <Content Include="Assets\img\demo\e_img04.jpg" />
+    <Content Include="Assets\img\demo\e_img05.jpg" />
+    <Content Include="Assets\img\demo\e_img06.jpg" />
+    <Content Include="Assets\img\demo\e_img07.jpg" />
+    <Content Include="Assets\img\demo\e_img08.jpg" />
+    <Content Include="Assets\img\demo\e_img09.jpg" />
+    <Content Include="Assets\img\demo\e_img1.jpg" />
+    <Content Include="Assets\img\demo\e_img10.jpg" />
+    <Content Include="Assets\img\demo\e_img11.jpg" />
+    <Content Include="Assets\img\demo\e_img12.jpg" />
+    <Content Include="Assets\img\demo\e_img13.jpg" />
+    <Content Include="Assets\img\demo\e_img14.jpg" />
+    <Content Include="Assets\img\demo\e_img15.jpg" />
+    <Content Include="Assets\img\demo\e_img16.jpg" />
+    <Content Include="Assets\img\demo\e_img17.jpg" />
+    <Content Include="Assets\img\demo\e_img18.jpg" />
+    <Content Include="Assets\img\demo\e_img2.jpg" />
+    <Content Include="Assets\img\demo\e_img3.jpg" />
+    <Content Include="Assets\img\demo\e_img4.jpg" />
+    <Content Include="Assets\img\demo\e_img5.jpg" />
+    <Content Include="Assets\img\demo\e_iphonec.png" />
+    <Content Include="Assets\img\demo\e_macbook.png" />
+    <Content Include="Assets\img\demo\e_product1.jpg" />
+    <Content Include="Assets\img\demo\e_product2.jpg" />
+    <Content Include="Assets\img\demo\e_product3.jpg" />
+    <Content Include="Assets\img\demo\e_product4.jpg" />
+    <Content Include="Assets\img\demo\e_product5.jpg" />
+    <Content Include="Assets\img\demo\firefox.png" />
+    <Content Include="Assets\img\demo\hp.png" />
+    <Content Include="Assets\img\demo\image-1.jpg" />
+    <Content Include="Assets\img\demo\image-2.jpg" />
+    <Content Include="Assets\img\demo\image-3.jpg" />
+    <Content Include="Assets\img\demo\image-4.jpg" />
+    <Content Include="Assets\img\demo\image-5.jpg" />
+    <Content Include="Assets\img\demo\image-6.jpg" />
+    <Content Include="Assets\img\demo\img01.jpg" />
+    <Content Include="Assets\img\demo\img02.jpg" />
+    <Content Include="Assets\img\demo\img03.jpg" />
+    <Content Include="Assets\img\demo\img04.jpg" />
+    <Content Include="Assets\img\demo\img05.jpg" />
+    <Content Include="Assets\img\demo\img06.jpg" />
+    <Content Include="Assets\img\demo\img07.jpg" />
+    <Content Include="Assets\img\demo\img08.jpg" />
+    <Content Include="Assets\img\demo\img09.jpg" />
+    <Content Include="Assets\img\demo\img10.jpg" />
+    <Content Include="Assets\img\demo\img11.jpg" />
+    <Content Include="Assets\img\demo\img12.jpg" />
+    <Content Include="Assets\img\demo\img13.jpg" />
+    <Content Include="Assets\img\demo\img14.jpg" />
+    <Content Include="Assets\img\demo\img15.jpg" />
+    <Content Include="Assets\img\demo\img16.jpg" />
+    <Content Include="Assets\img\demo\img17.jpg" />
+    <Content Include="Assets\img\demo\img18.jpg" />
+    <Content Include="Assets\img\demo\img19.jpg" />
+    <Content Include="Assets\img\demo\img20.jpg" />
+    <Content Include="Assets\img\demo\img21.jpg" />
+    <Content Include="Assets\img\demo\img22.jpg" />
+    <Content Include="Assets\img\demo\img23.jpg" />
+    <Content Include="Assets\img\demo\img24.jpg" />
+    <Content Include="Assets\img\demo\img_full.jpg" />
+    <Content Include="Assets\img\demo\intel.png" />
+    <Content Include="Assets\img\demo\ipad.png" />
+    <Content Include="Assets\img\demo\iphone.png" />
+    <Content Include="Assets\img\demo\m1.jpg" />
+    <Content Include="Assets\img\demo\m11.jpg" />
+    <Content Include="Assets\img\demo\m12.jpg" />
+    <Content Include="Assets\img\demo\m2.jpg" />
+    <Content Include="Assets\img\demo\m4.jpg" />
+    <Content Include="Assets\img\demo\m9.jpg" />
+    <Content Include="Assets\img\demo\mac.png" />
+    <Content Include="Assets\img\demo\macpro.png" />
+    <Content Include="Assets\img\demo\maxis.png" />
+    <Content Include="Assets\img\demo\microsoft.png" />
+    <Content Include="Assets\img\demo\mockup.png" />
+    <Content Include="Assets\img\demo\mockup2.png" />
+    <Content Include="Assets\img\demo\mockup3.png" />
+    <Content Include="Assets\img\demo\n1.jpg" />
+    <Content Include="Assets\img\demo\new_mac.jpg" />
+    <Content Include="Assets\img\demo\nokia.png" />
+    <Content Include="Assets\img\demo\office1.jpg" />
+    <Content Include="Assets\img\demo\office2.jpg" />
+    <Content Include="Assets\img\demo\office3.jpg" />
+    <Content Include="Assets\img\demo\office4.jpg" />
+    <Content Include="Assets\img\demo\pre.png" />
+    <Content Include="Assets\img\demo\pre2.png" />
+    <Content Include="Assets\img\demo\pre3.png" />
+    <Content Include="Assets\img\demo\profile.jpg" />
+    <Content Include="Assets\img\demo\samsung.png" />
+    <Content Include="Assets\img\demo\sh-m1.jpg" />
+    <Content Include="Assets\img\demo\sh-w1.jpg" />
+    <Content Include="Assets\img\demo\sh-w2.jpg" />
+    <Content Include="Assets\img\demo\sh-w3.jpg" />
+    <Content Include="Assets\img\demo\sh_iphone6.jpg" />
+    <Content Include="Assets\img\demo\sony.png" />
+    <Content Include="Assets\img\demo\surface.jpg" />
+    <Content Include="Assets\img\demo\t1.jpg" />
+    <Content Include="Assets\img\demo\t2.jpg" />
+    <Content Include="Assets\img\demo\t3.jpg" />
+    <Content Include="Assets\img\demo\t4.jpg" />
+    <Content Include="Assets\img\demo\t5.jpg" />
+    <Content Include="Assets\img\demo\t6.jpg" />
+    <Content Include="Assets\img\demo\team.jpg" />
+    <Content Include="Assets\img\demo\thumb-1.jpg" />
+    <Content Include="Assets\img\demo\thumb-2.jpg" />
+    <Content Include="Assets\img\demo\thumb-3.jpg" />
+    <Content Include="Assets\img\demo\thumb-4.jpg" />
+    <Content Include="Assets\img\demo\thumb-5.jpg" />
+    <Content Include="Assets\img\demo\thumb-6.jpg" />
+    <Content Include="Assets\img\demo\ubuntu_tablet.png" />
+    <Content Include="Assets\img\demo\w1.jpg" />
+    <Content Include="Assets\img\demo\w10.jpg" />
+    <Content Include="Assets\img\demo\w11.jpg" />
+    <Content Include="Assets\img\demo\w12.jpg" />
+    <Content Include="Assets\img\demo\w2.jpg" />
+    <Content Include="Assets\img\demo\w3.jpg" />
+    <Content Include="Assets\img\demo\w4.jpg" />
+    <Content Include="Assets\img\demo\w5.jpg" />
+    <Content Include="Assets\img\demo\w6.jpg" />
+    <Content Include="Assets\img\demo\w7.jpg" />
+    <Content Include="Assets\img\demo\w8.jpg" />
+    <Content Include="Assets\img\demo\w9.jpg" />
+    <Content Include="Assets\img\demo\wf1.jpg" />
+    <Content Include="Assets\img\demo\wf2.jpg" />
+    <Content Include="Assets\img\demo\wf3.jpg" />
+    <Content Include="Assets\img\demo\wf4.jpg" />
+    <Content Include="Assets\img\demo\wire1.png" />
+    <Content Include="Assets\img\demo\wire1capture.png" />
+    <Content Include="Assets\img\demo\wire1shadow.png" />
+    <Content Include="Assets\img\favicon.png" />
+    <Content Include="Assets\img\gridtile.png" />
+    <Content Include="Assets\img\gridtile_3x3.png" />
+    <Content Include="Assets\img\gridtile_3x3_white.png" />
+    <Content Include="Assets\img\gridtile_white.png" />
+    <Content Include="Assets\img\img60.jpg" />
+    <Content Include="Assets\img\loader.gif" />
+    <Content Include="Assets\img\logo50_white.png" />
+    <Content Include="Assets\img\logo\aabb-logo-grande.png" />
+    <Content Include="Assets\img\logo_big_white.png" />
+    <Content Include="Assets\img\logo_raw.png" />
+    <Content Include="Assets\img\logo_raw_white.png" />
+    <Content Include="Assets\img\logo_white.png" />
+    <Content Include="Assets\img\newspaper_bg1.jpg" />
+    <Content Include="Assets\img\newspaper_bg2.jpg" />
+    <Content Include="Assets\img\newspaper_bg3.jpg" />
+    <Content Include="Assets\img\plan.jpg" />
+    <Content Include="Assets\img\preload.gif" />
+    <Content Include="Assets\img\slide_back.jpg" />
+    <Content Include="Assets\js\app.js" />
+    <Content Include="Assets\js\carousels.js" />
+    <Content Include="Assets\js\coming.js" />
+    <Content Include="Assets\js\coming2.js" />
+    <Content Include="Assets\js\commerce.js" />
+    <Content Include="Assets\js\DropdownHover.js" />
+    <Content Include="Assets\js\e-commerce_product.js" />
+    <Content Include="Assets\js\holder.js" />
+    <Content Include="Assets\js\home_full.js" />
+    <Content Include="Assets\js\home_info.js" />
+    <Content Include="Assets\js\home_inverse_navbar.js" />
+    <Content Include="Assets\js\home_lead.js" />
+    <Content Include="Assets\js\home_login_full.js" />
+    <Content Include="Assets\js\home_plan.js" />
+    <Content Include="Assets\js\home_product.js" />
+    <Content Include="Assets\js\home_profile.js" />
+    <Content Include="Assets\js\home_services.js" />
+    <Content Include="Assets\js\html5shiv.min.js" />
+    <Content Include="Assets\js\index.js" />
+    <Content Include="Assets\js\page_charts.js" />
+    <Content Include="Assets\js\portfolio.js" />
+    <Content Include="Assets\js\respond.min.js" />
+    <Content Include="Assets\js\slidebars.js" />
+    <Content Include="Assets\js\styleswitcher.js" />
+    <Content Include="Assets\js\styleswitcher_leadpage.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shAutoloader.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushAppleScript.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushAS3.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushBash.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushColdFusion.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushCpp.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushCSharp.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushCss.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushDelphi.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushDiff.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushErlang.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushGroovy.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushJava.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushJavaFX.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushJScript.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushPerl.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushPhp.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushPlain.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushPowerShell.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushPython.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushRuby.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushSass.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushScala.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushSql.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushVb.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shBrushXml.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shCore.js" />
+    <Content Include="Assets\js\syntaxhighlighter\shLegacy.js" />
+    <Content Include="Assets\js\vendors.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Assets\css\preload.css.map" />
+    <Content Include="Assets\css\style-aqua.css.map" />
+    <Content Include="Assets\css\style-blue.css.map" />
+    <Content Include="Assets\css\style-blue2.css.map" />
+    <Content Include="Assets\css\style-blue3.css.map" />
+    <Content Include="Assets\css\style-blue4.css.map" />
+    <Content Include="Assets\css\style-blue5.css.map" />
+    <Content Include="Assets\css\style-fuchsia.css.map" />
+    <Content Include="Assets\css\style-gray.css.map" />
+    <Content Include="Assets\css\style-green.css.map" />
+    <Content Include="Assets\css\style-green2.css.map" />
+    <Content Include="Assets\css\style-green3.css.map" />
+    <Content Include="Assets\css\style-green4.css.map" />
+    <Content Include="Assets\css\style-green5.css.map" />
+    <Content Include="Assets\css\style-orange.css.map" />
+    <Content Include="Assets\css\style-orange2.css.map" />
+    <Content Include="Assets\css\style-orange3.css.map" />
+    <Content Include="Assets\css\style-pink.css.map" />
+    <Content Include="Assets\css\style-red.css.map" />
+    <Content Include="Assets\css\style-red2.css.map" />
+    <Content Include="Assets\css\style-red3.css.map" />
+    <Content Include="Assets\css\style-violet.css.map" />
+    <Content Include="Assets\css\style-violet2.css.map" />
+    <Content Include="Assets\css\style-violet3.css.map" />
+    <Content Include="Assets\css\style-yellow.css.map" />
+    <Content Include="Assets\css\style-yellow2.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCore.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreDefault.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreDjango.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreEclipse.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreEmacs.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreFadeToGrey.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreMDUltra.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreMidnight.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shCoreRDark.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeDefault.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeDjango.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeEclipse.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeEmacs.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeFadeToGrey.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeMDUltra.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeMidnight.css.map" />
+    <Content Include="Assets\css\syntaxhighlighter\shThemeRDark.css.map" />
+    <Content Include="Assets\css\width-boxed.css.map" />
+    <Content Include="Assets\css\width-full.css.map" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\fonts\socialglyphs-webfont.eot" />
+    <Content Include="Assets\fonts\socialglyphs-webfont.ttf" />
+    <Content Include="Assets\fonts\socialglyphs-webfont.woff" />
+    <Content Include="Assets\js\jquery.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Assets\psd\aabb-logo-grande.psd" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8518</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8518/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
