@@ -77,12 +77,19 @@
 
             @RenderBody()
 
+            @Html.Partial("_FooterBar")
+
+            <footer id="footer">
+                <p>&copy; @DateTime.Now.Year - AABB Piracicaba</p>
+            </footer>
+
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <script src="/Assets/js/vendors.js"></script>
 
+    <script src="/Assets/js/DropdownHover.js"></script>
     <script src="/Assets/js/app.js"></script>
 
 </body>

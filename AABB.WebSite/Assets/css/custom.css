@@ -1,4 +1,8 @@
-﻿.header-full-dark {
+﻿.dropdown-no-drop > a:after {
+    content: ""!important;
+}
+
+.header-full-dark {
     background-color: #2a458c;
 }
 
@@ -59,4 +63,8 @@
 .header-full-dark .top-nav .dropdown a i {
     background-color: #f9dd16;
     color: #FFF;
+}
+
+a.destaque {
+    color: #f9dd16!important;
 }

@@ -10,17 +10,24 @@
         </div> <!-- navbar-header -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="">
+                <li class="dropdown dropdown-no-drop">
                     <a href="@Url.Action("Index", "Home")"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"><i class="fa fa-gamepad"></i> Atividades</a>
                     <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
-                        <li><a href="blog.html">Rachão de Qualidade</a></li>
-                        <li><a href="blog_left.html">Academia</a></li>
-                        <li><a href="blog_full.html">Tênis</a></li>
-                        <li><a href="blog_masonry.html">Piscinas <span class="label label-success pull-right">Abertas</span></a></li>
+                        <li><a href="#">Rachão de Qualidade</a></li>
+                        <li><a href="#">Academia</a></li>
+                        <li><a href="#">Tênis</a></li>
+                        <li><a href="#">Piscinas <span class="label label-success pull-right">Abertas</span></a></li>
                     </ul>
+                </li>
+                <li class="dropdown dropdown-no-drop">
+                    <a href="#"><i class="fa fa-calendar"></i> Eventos</a>
+                </li>
+
+                <li class="dropdown dropdown-no-drop visible-xs">
+                    <a href="#"><i class="fa fa-user"></i> Área do Associado</a>
                 </li>
             </ul>
         </div><!-- navbar-collapse -->
