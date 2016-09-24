@@ -1,4 +1,8 @@
-﻿.dropdown-no-drop > a:after {
+﻿.navbar-default .navbar-nav > li.dropdown-no-drop > a {
+    padding-right: 15px;
+}
+
+.dropdown-no-drop > a:after {
     content: ""!important;
 }
 
