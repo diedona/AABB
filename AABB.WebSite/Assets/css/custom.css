@@ -3,7 +3,7 @@
 }
 
 .dropdown-no-drop > a:after {
-    content: ""!important;
+    content: "" !important;
 }
 
 .header-full-dark {
@@ -16,36 +16,36 @@
 
 .header-full-title {
     padding-left: 130px;
-    background-image: url(/Assets/img/logo/aabb-logo-grande.png)
+    background-image: url(/Assets/img/logo/aabb-logo-grande.png);
 }
 
-.navbar-header-full {
-    /*background-color: #2a458c;*/
+@media only screen and (max-width : 767px) {
+    .navbar-header-full {
+        background-color: #2a458c;
+    }
+
+    .navbar-default .navbar-brand {
+        color: #FFF;
+    }
+
+    .navbar-default .navbar-brand span {
+        color: #f9dd16;
+    }
+
+    .navbar-default .navbar-brand:focus, 
+    .navbar-default .navbar-brand:hover {
+        color: #FFF;
+    }
+}
+
+.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
+    background-color: #f0f0f0;
 }
 
 .navbar-default .navbar-brand {
-    /*color: #fff;*/
     text-transform: none;
     background-image: none;
     padding-left: 5px;
-}
-
-.navbar-default .navbar-brand:focus, 
-.navbar-default .navbar-brand:hover {
-    /*color: #fff;*/
-}
-
-.navbar-default .navbar-brand span {
-    color: #000;
-}
-
-.navbar-default .navbar-nav>li>a {
-    /*color: #fff;*/
-}
-
-.navbar-default .navbar-nav>li>a:focus, 
-.navbar-default .navbar-nav>li>a:hover {
-    /*color: #f9dd16;*/
 }
 
 .wrap-hero .carousel-hero .carousel-caption span,
@@ -54,12 +54,12 @@
 }
 
 .wrap-hero {
-    background-image: url(/Assets/img/aabb/bg-happy-people-opt.jpg)
+    background-image: url(/Assets/img/aabb/bg-happy-people-opt.jpg);
 }
 
-.wrap-hero .carousel-hero .carousel-caption .action-zone {
-    text-align: left;
-}
+    .wrap-hero .carousel-hero .carousel-caption .action-zone {
+        text-align: left;
+    }
 
 /*******************************/
 
@@ -70,5 +70,5 @@
 }
 
 a.destaque {
-    color: #f9dd16!important;
+    color: #f9dd16 !important;
 }
