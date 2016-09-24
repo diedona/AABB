@@ -72,3 +72,8 @@
 a.destaque {
     color: #f9dd16 !important;
 }
+
+.image-center {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -101,6 +101,8 @@
     <Content Include="Assets\img\aabb\bg-happy-people-opt.jpg" />
     <Content Include="Assets\img\aabb\bg_happy_people.jpg" />
     <Content Include="Assets\img\aabb\futebol-bola.jpg" />
+    <Content Include="Assets\img\aabb\futebol-campo-2.jpg" />
+    <Content Include="Assets\img\aabb\futebol-campo.jpg" />
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
     <Content Include="Assets\img\aabb\salao-de-festas.jpg" />
     <Content Include="Assets\img\bx_loader.gif" />
@@ -406,6 +408,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AtividadesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -440,6 +443,7 @@
     <Content Include="Views\Shared\_FooterBar.cshtml" />
     <None Include="Properties\PublishProfiles\aabbpira - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\aabbpira - Web Deploy.pubxml" />
+    <Content Include="Views\Atividades\Futebol.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
