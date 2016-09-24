@@ -545,6 +545,8 @@
     <Content Include="Assets\psd\aabb-logo-grande.psd" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Shared\_FooterBar.cshtml" />
+    <None Include="Properties\PublishProfiles\aabbpira - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\aabbpira - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
