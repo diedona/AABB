@@ -98,6 +98,8 @@
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\fonts\socialglyphs-webfont.svg" />
+    <Content Include="Assets\img\aabb\academia-aparelhos.jpg" />
+    <Content Include="Assets\img\aabb\academia-peso.jpg" />
     <Content Include="Assets\img\aabb\bg-happy-people-opt.jpg" />
     <Content Include="Assets\img\aabb\bg_happy_people.jpg" />
     <Content Include="Assets\img\aabb\futebol-bola.jpg" />
@@ -444,6 +446,7 @@
     <None Include="Properties\PublishProfiles\aabbpira - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\aabbpira - Web Deploy.pubxml" />
     <Content Include="Views\Atividades\Futebol.cshtml" />
+    <Content Include="Views\Atividades\Academia.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

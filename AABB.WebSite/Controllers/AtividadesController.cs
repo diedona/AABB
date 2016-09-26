@@ -12,5 +12,10 @@ namespace AABB.WebSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Academia()
+        {
+            return View();
+        }
     }
 }
