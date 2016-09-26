@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\css\custom.css" />
+    <Content Include="Assets\css\lightbox.css" />
     <Content Include="Assets\css\preload.css" />
     <Content Include="Assets\css\style-aqua.css" />
     <Content Include="Assets\css\style-blue.css" />
@@ -98,9 +99,13 @@
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\fonts\socialglyphs-webfont.svg" />
+    <Content Include="Assets\img\aabb\aabb-01-grande.jpg" />
     <Content Include="Assets\img\aabb\aabb-01.jpg" />
+    <Content Include="Assets\img\aabb\aabb-02-grande.jpg" />
     <Content Include="Assets\img\aabb\aabb-02.jpg" />
+    <Content Include="Assets\img\aabb\aabb-03-grande.jpg" />
     <Content Include="Assets\img\aabb\aabb-03.jpg" />
+    <Content Include="Assets\img\aabb\aabb-04-grande.jpg" />
     <Content Include="Assets\img\aabb\aabb-04.jpg" />
     <Content Include="Assets\img\aabb\academia-aparelhos.jpg" />
     <Content Include="Assets\img\aabb\academia-peso.jpg" />
@@ -117,6 +122,7 @@
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
     <Content Include="Assets\img\aabb\salao-de-festas.jpg" />
     <Content Include="Assets\img\bx_loader.gif" />
+    <Content Include="Assets\img\close.png" />
     <Content Include="Assets\img\coloredbg.png" />
     <Content Include="Assets\img\colors\blue\logo.png" />
     <Content Include="Assets\img\colors\blue\logo50.png" />
@@ -280,13 +286,16 @@
     <Content Include="Assets\img\gridtile_white.png" />
     <Content Include="Assets\img\img60.jpg" />
     <Content Include="Assets\img\loader.gif" />
+    <Content Include="Assets\img\loading.gif" />
     <Content Include="Assets\img\logo50_white.png" />
     <Content Include="Assets\img\logo\aabb-logo-grande.png" />
     <Content Include="Assets\img\logo_big_white.png" />
     <Content Include="Assets\img\logo_raw.png" />
     <Content Include="Assets\img\logo_raw_white.png" />
     <Content Include="Assets\img\logo_white.png" />
+    <Content Include="Assets\img\next.png" />
     <Content Include="Assets\img\preload.gif" />
+    <Content Include="Assets\img\prev.png" />
     <Content Include="Assets\js\app.js" />
     <Content Include="Assets\js\carousels.js" />
     <Content Include="Assets\js\coming.js" />
@@ -306,6 +315,7 @@
     <Content Include="Assets\js\home_services.js" />
     <Content Include="Assets\js\html5shiv.min.js" />
     <Content Include="Assets\js\index.js" />
+    <Content Include="Assets\js\lightbox.js" />
     <Content Include="Assets\js\page_charts.js" />
     <Content Include="Assets\js\portfolio.js" />
     <Content Include="Assets\js\respond.min.js" />
