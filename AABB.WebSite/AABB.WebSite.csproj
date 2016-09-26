@@ -411,6 +411,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AtividadesController.cs" />
+    <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -447,6 +448,7 @@
     <None Include="Properties\PublishProfiles\aabbpira - Web Deploy.pubxml" />
     <Content Include="Views\Atividades\Futebol.cshtml" />
     <Content Include="Views\Atividades\Academia.cshtml" />
+    <Content Include="Views\Eventos\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
