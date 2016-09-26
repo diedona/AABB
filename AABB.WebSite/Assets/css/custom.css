@@ -80,13 +80,4 @@ a.destaque {
 
 .img-master {
     width: 100%;
-    padding: 5px;
-}
-
-@media only screen and (max-width : 767px) {
-    /*.img-master {
-        width: 550px;
-        padding: 5px;
-        margin: 5px;
-    }*/
 }
