@@ -98,6 +98,10 @@
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\fonts\socialglyphs-webfont.svg" />
+    <Content Include="Assets\img\aabb\aabb-01.jpg" />
+    <Content Include="Assets\img\aabb\aabb-02.jpg" />
+    <Content Include="Assets\img\aabb\aabb-03.jpg" />
+    <Content Include="Assets\img\aabb\aabb-04.jpg" />
     <Content Include="Assets\img\aabb\academia-aparelhos.jpg" />
     <Content Include="Assets\img\aabb\academia-peso.jpg" />
     <Content Include="Assets\img\aabb\bg-happy-people-opt.jpg" />
@@ -107,6 +111,7 @@
     <Content Include="Assets\img\aabb\futebol-campo.jpg" />
     <Content Include="Assets\img\aabb\galeria-01.jpg" />
     <Content Include="Assets\img\aabb\galeria-02.jpg" />
+    <Content Include="Assets\img\aabb\logo-grande.jpg" />
     <Content Include="Assets\img\aabb\party-web.jpg" />
     <Content Include="Assets\img\aabb\piscina-01.jpg" />
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
@@ -345,6 +350,7 @@
     <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\GaleriasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SobreController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -382,6 +388,7 @@
     <Content Include="Views\Atividades\Academia.cshtml" />
     <Content Include="Views\Eventos\Index.cshtml" />
     <Content Include="Views\Galerias\Index.cshtml" />
+    <Content Include="Views\Sobre\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
