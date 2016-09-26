@@ -105,6 +105,8 @@
     <Content Include="Assets\img\aabb\futebol-bola.jpg" />
     <Content Include="Assets\img\aabb\futebol-campo-2.jpg" />
     <Content Include="Assets\img\aabb\futebol-campo.jpg" />
+    <Content Include="Assets\img\aabb\galeria-01.jpg" />
+    <Content Include="Assets\img\aabb\galeria-02.jpg" />
     <Content Include="Assets\img\aabb\party-web.jpg" />
     <Content Include="Assets\img\aabb\piscina-01.jpg" />
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
@@ -341,6 +343,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AtividadesController.cs" />
     <Compile Include="Controllers\EventosController.cs" />
+    <Compile Include="Controllers\GaleriasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -378,6 +381,7 @@
     <Content Include="Views\Atividades\Futebol.cshtml" />
     <Content Include="Views\Atividades\Academia.cshtml" />
     <Content Include="Views\Eventos\Index.cshtml" />
+    <Content Include="Views\Galerias\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -28,14 +28,14 @@
         color: #FFF;
     }
 
-    .navbar-default .navbar-brand span {
-        color: #f9dd16;
-    }
+        .navbar-default .navbar-brand span {
+            color: #f9dd16;
+        }
 
-    .navbar-default .navbar-brand:focus, 
-    .navbar-default .navbar-brand:hover {
-        color: #FFF;
-    }
+        .navbar-default .navbar-brand:focus,
+        .navbar-default .navbar-brand:hover {
+            color: #FFF;
+        }
 }
 
 .yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {
@@ -76,4 +76,17 @@ a.destaque {
 .image-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-master {
+    width: 100%;
+    padding: 5px;
+}
+
+@media only screen and (max-width : 767px) {
+    /*.img-master {
+        width: 550px;
+        padding: 5px;
+        margin: 5px;
+    }*/
 }
