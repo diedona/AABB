@@ -81,3 +81,8 @@ a.destaque {
 .img-master {
     width: 100%;
 }
+
+.galeria-title {
+    font-size: 1.5em;
+    color: #1b9af7;
+}
