@@ -119,8 +119,12 @@
     <Content Include="Assets\img\aabb\logo-grande.jpg" />
     <Content Include="Assets\img\aabb\party-web.jpg" />
     <Content Include="Assets\img\aabb\piscina-01.jpg" />
+    <Content Include="Assets\img\aabb\piscina-02.jpg" />
+    <Content Include="Assets\img\aabb\piscina-03.jpg" />
     <Content Include="Assets\img\aabb\quadra-tenis.jpg" />
     <Content Include="Assets\img\aabb\salao-de-festas.jpg" />
+    <Content Include="Assets\img\aabb\tenis-01.jpg" />
+    <Content Include="Assets\img\aabb\tenis-02.jpg" />
     <Content Include="Assets\img\bx_loader.gif" />
     <Content Include="Assets\img\close.png" />
     <Content Include="Assets\img\coloredbg.png" />
@@ -399,6 +403,8 @@
     <Content Include="Views\Eventos\Index.cshtml" />
     <Content Include="Views\Galerias\Index.cshtml" />
     <Content Include="Views\Sobre\Index.cshtml" />
+    <Content Include="Views\Atividades\Tenis.cshtml" />
+    <Content Include="Views\Atividades\Piscinas.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

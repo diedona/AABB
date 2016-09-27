@@ -17,5 +17,15 @@ namespace AABB.WebSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Tenis()
+        {
+            return View();
+        }
+
+        public ActionResult Piscinas()
+        {
+            return View();
+        }
     }
 }
