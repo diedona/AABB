@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AABB.WebSite", "AABB.WebSite\AABB.WebSite.csproj", "{1888FD96-165C-4F4A-B380-39C58E46FCCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AABB.WebAdmin", "AABB.WebAdmin\AABB.WebAdmin.csproj", "{A6BCBB19-DB54-4781-B84E-0E325D9B9AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AABB.WebApi", "AABB.WebApi\AABB.WebApi.csproj", "{CE9470F5-569D-47E1-BA43-7E9B2A31607B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1888FD96-165C-4F4A-B380-39C58E46FCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1888FD96-165C-4F4A-B380-39C58E46FCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1888FD96-165C-4F4A-B380-39C58E46FCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6BCBB19-DB54-4781-B84E-0E325D9B9AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6BCBB19-DB54-4781-B84E-0E325D9B9AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6BCBB19-DB54-4781-B84E-0E325D9B9AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6BCBB19-DB54-4781-B84E-0E325D9B9AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9470F5-569D-47E1-BA43-7E9B2A31607B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9470F5-569D-47E1-BA43-7E9B2A31607B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9470F5-569D-47E1-BA43-7E9B2A31607B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9470F5-569D-47E1-BA43-7E9B2A31607B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
